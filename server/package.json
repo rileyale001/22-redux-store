@@ -6,7 +6,14 @@
   "engines": {
     "node": "16.2.0"
   },
-  "scripts": { "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev", "start:prod": "cd server && npm start", "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"", "install": "cd server && npm i && cd ../client && npm i", "seed": "cd server && npm run seed", "heroku-postbuild": "cd client && npm run build" },
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "heroku-postbuild": "cd client && npm run build"
+  },
   "keywords": [],
   "author": "Alex Riley",
   "license": "ISC",
@@ -15,6 +22,7 @@
     "bcrypt": "^4.0.1",
     "express": "^4.17.1",
     "graphql": "^15.5.0",
+    "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.7",
     "react": "^17.0.2",
