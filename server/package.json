@@ -2,17 +2,13 @@
   "name": "mern-server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server.js/server.js",
   "engines": {
     "node": "16.2.0"
   },
-  "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon",
-    "seed": "node config/seeds.js"
-  },
+  "scripts": { "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev", "start:prod": "cd server && npm start", "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"", "install": "cd server && npm i && cd ../client && npm i", "seed": "cd server && npm run seed", "heroku-postbuild": "cd client && npm run build" },
   "keywords": [],
-  "author": "",
+  "author": "Alex Riley",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^2.11.0",
