@@ -1,7 +1,7 @@
 {
   "name": "shopmern",
   "version": "1.0.0",
-  "description": "",
+  "description": "Work with a partner to add comments describing the functionality of the code found in [24-Stu_Stripe/Unsolved/client/src/components/Cart/index.js](24-Stu_Stripe/Unsolved/client/src/components/Cart/index.js).",
   "main": "server/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -20,9 +20,18 @@
   "dependencies": {
     "apollo-boost": "^0.4.9",
     "apollo-link-context": "^1.0.20",
+    "dotenv": "^10.0.0",
     "graphql-tag": "^2.12.5",
     "node": "^16.6.1",
     "nodejs": "^0.0.0",
     "serve": "^12.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rileyale001/22-redux-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rileyale001/22-redux-store/issues"
+  },
+  "homepage": "https://github.com/rileyale001/22-redux-store#readme"
 }
