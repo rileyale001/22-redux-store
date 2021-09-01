@@ -7,7 +7,7 @@
     "node": "16.2.0"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node src/server.js",
+    "start": "node server.js",
     "watch": "nodemon",
     "seed": "node config/seeds.js"
   },
